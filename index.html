@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Whispir Mobile API</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link href="stylesheets/screen.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" type="text/css" media="print" />
+      <script src="javascripts/all.js" type="text/javascript"></script>
+
+      <script>
+        $(function() {
+          setupLanguages(["go"]);
+        });
+      </script>
+    <script>
+      //This is Google's default GA code
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-7856627-26', 'auto');
+      ga('send', 'pageview');
+      //This does hash-click tracking (inspired by http://stackoverflow.com/a/4813223)
+      $(document).ready(function() {
+        $('.tocify-item a').on('click', function(){
+          ga('send', 'pageview', {'page': location.pathname + location.search  + location.hash});
+        });
+      });
+    </script>
+  </head>
+
+  <body class="index">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" />
+      </span>
+    </a>
+    <div class="tocify-wrapper">
+      <img src="images/whispir.io_Logo_Positive.png" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="go">json</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <div id="toc">
+      </div>
+        <ul class="toc-footer">
+            <li><a href='https://whispir.io/register'>Create an API Key</a></li>
+            <li><a href='http://github.com/tripit/slate'>Documentation by Slate</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        
+        <h1 id="whispir-mobile-api">Whispir Mobile API</h1>
+
+<blockquote>
+<p>API Availability</p>
+
+<blockquote>
+<p>The Whispir Mobile API will soon be launching for invite-only usage in mid-2016.  </p>
+
+<p>Please <a href="https://whispir.io/contact">contact us</a> to register your interest and we&rsquo;ll let you know when it&rsquo;s available.</p>
+</blockquote>
+</blockquote>
+
+<p>Built by developers, for developers, Whispir is the place where you can easily build communications into your app – SMS, email, push, voice, chat, web, social, &amp; rich messages.</p>
+
+<p>The Whispir Mobile API provides the facility for applications to be notified and never miss a message with important communications pushed straight to your applications.</p>
+
+<ul>
+<li>Create a secure mobile inbox within your application for fast access to your secure messages</li>
+<li>Create powerful, effective communications within your applications with Whispir Rich Messaging</li>
+<li>Securely access your organisations address book, and connect with the right people at the right time using instant in-app chat messaging</li>
+</ul>
+
+<p>See a video of the API in action here:
+<p style="text-align: center">
+<iframe src="https://player.vimeo.com/video/121110485?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</p></p>
+
+<p>The Whispir Mobile API provides developers with:</p>
+
+<h3 id="mobile-inbox-api">Mobile Inbox API</h3>
+
+<p>The Whispir Mobile Inbox API gives developers the ability to:</p>
+
+<ul>
+<li>Create a native, rich communications inbox  directly within any application.</li>
+<li>Receive text based, or Rich Push Notifications sent from the Whispir Platform API with ease.</li>
+<li>Send message status back to the Whispir Platform to keep the business owners informed of who has received messages.</li>
+</ul>
+
+<h3 id="mobile-chat-api">Mobile Chat API</h3>
+
+<p>The Whispir Mobile Chat API provides developers with all the tools require to build an organisational chat capability directly in any application:</p>
+
+<ul>
+<li>Access an organisation address book to create chats with users</li>
+<li>Pivot into chat from any message to allow customers or staff members to chat with HQ</li>
+<li>Share text based chat or images without worrying about storage, replication or backups - Whispir manages it all for you</li>
+</ul>
+
+<h3 id="api-core-features">API Core Features</h3>
+
+<ul>
+<li>Restful JSON API over HTTPS (TLS 1.2)</li>
+<li>Authenticated using JWT (via <code class="prettyprint">auth</code> and <code class="prettyprint">renew</code> endpoints)</li>
+<li>Multiple device registration methods (invite-only, self-registration, background registration)</li>
+<li>Out of the box support for device registration limits per contact</li>
+<li>Push to SMS Escalation on non-delivery provided by Whispir Platform API</li>
+</ul>
+
+        <h1 id="contact-us">Contact Us</h1>
+
+<p>If you&rsquo;re interested in using our Whispir Mobile API or finding out more information, please <a href="https://whispir.io/contact">contact us</a>, or tweet @jordwalsh or @whispir.</p>
+
+<p>Thanks!</p>
+
+<p>The Whispir.io Team</p>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="go">json</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
